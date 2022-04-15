@@ -1,0 +1,144 @@
+/* Variáveis das cores*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal:  'Inter';
+}
+
+body{
+    background-color: var(--cor-fundo); /* Chamando variáveis*/
+    color: var(--branco-principal); /*NÃO PRECISEI ATRIBUIR O COLOR AO H1, ELE SE DIFERENCIOU DO BG-COLOR*/
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    /*RESET BASICO DAS MARGENS DA PÁGINA*/
+}
+.container__titulo{
+    font-size: 28px;
+}
+
+.principal{
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%; /* O GRID SEPARA OS ELEMENTOS DA TELA UM AO LADO DO OUTRO OU ABAIXO */
+    
+}
+ .container__botao {
+     background-color: var(--botao-azul);
+     border-radius: 5px;
+     padding: 1em;
+     color: var(--branco-principal);
+     display: block;
+     margin-bottom: 1em;
+     
+ }
+.container__botao_secundario{
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display:block;
+    color: var(--branco-principal);
+    
+}
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+.container___imagem{
+    margin:1em 0 2em 0; /* AO COLOCAR 4 VALORES NO MARGIN, OS MESMOS SÃO ATRIBUIDOS NO SENTIDO HORÁRIO NOS ELEMENTOS*/
+
+}
+.container__caixa{
+    margin: 0 6em;
+}
+
+
+.secundario__imagem{
+    width: 80%;
+    
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+.secundario__botao{
+    display:inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal)
+}
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal)
+}
+.rodape__logo{
+    align-items: center;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+.guia__item {
+    text-decoration: none;
+    color:var(--branco-principal);
+    margin: 1em;
+}
+.guia__item:hover {
+    color: var(--botao-azul); /* Pseudo classes do CSS detectam nossa interação com a telaé (hover é uma pseudo classe) */
+}
+.rodape__texto{
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 1em 0;
+}
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+ 
+
+/* INSTALAR EXTENSÃO LIVE SERVER PARA CRIAR O LOCALHOST PARA CARREGAR AS ALTERAÇÃOES NA PÁGINA*/
